@@ -10,8 +10,8 @@ std::vector<T> RND(std::size_t min, std::size_t max, std::size_t count) {
 }
 
 template<>
-std::vector<int> RND(std::size_t min, std::size_t max, std::size_t count) {
-    std::vector<int> v;
+std::vector<int32_t> RND(std::size_t min, std::size_t max, std::size_t count) {
+    std::vector<int32_t> v;
     v.reserve(count);
     std::random_device rd;
     std::mt19937 gen(rd());
